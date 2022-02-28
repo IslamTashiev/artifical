@@ -1,0 +1,125 @@
+.hero {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 50px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+  }
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 71px;
+    margin-top: 80px;
+
+    img {
+      max-width: 80%;
+      @media (max-width: 530px) {
+        width: 35%;
+      }
+    }
+    @media (max-width: 480px) {
+      gap: 40px;
+    }
+  }
+}
+.hero__container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.content {
+  &__item {
+    &:first-child {
+      max-width: 600px;
+      @media (max-width: 1080px) {
+        margin-bottom: 40px;
+      }
+    }
+    img {
+      max-width: 105%;
+    }
+  }
+}
+.item {
+  &__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #3a68b8;
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    color: #ffffff;
+    margin: 10px 0 40px;
+    @media (max-width: 630px) {
+      font-size: 45px;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 400px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #ffffff;
+    margin-bottom: 50px;
+    @media (max-width: 630px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 400px) {
+      font-size: 15px;
+      line-height: 120%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 430px) {
+      gap: 10px;
+      flex-direction: column;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 630px) {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      svg {
+        margin-right: 15px;
+        transition: 0.3s all ease;
+        @media (max-width: 430px) {
+          width: 15px;
+          margin-right: 10px;
+        }
+      }
+      &:hover {
+        svg {
+          transform: translateX(2px);
+        }
+      }
+    }
+  }
+}
