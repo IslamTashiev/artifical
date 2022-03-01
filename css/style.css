@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "circular";
+  font-family: "Circular";
   src: url("../fonts/CircularStd-Book.otf");
 }
 
@@ -530,4 +530,112 @@ body {
 
 .solution__text p {
   margin-top: 20px;
+}
+
+footer {
+  margin-top: 170px;
+  padding: 75px 0 145px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__item:first-child {
+  width: 260px;
+}
+
+.footer__item:last-child {
+  width: 260px;
+}
+
+.footer__item .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__item .logo__text {
+  font-weight: 600;
+  font-size: 15.9627px;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.footer__item-text {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.footer__item-adress {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item-adress svg {
+  margin-right: 10px;
+}
+
+.footer__item-title {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer__item-info {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+
+.footer__item-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 175px;
+  margin: 21px 0 52px;
 }
